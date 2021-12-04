@@ -3,28 +3,35 @@ from flask import Flask, jsonify
 app = Flask(__name__)
 infos = [
     {
-        "id": "1",
-        "music": [
-            {"name":"Coisa Linda", "estilo": "MBP"}
-        ], 
+        "integrante": 1,
         "estado": "SP",
-        "filme": [
-            {"name":"Premonição", "estilo": "Terror"}
-        ], 
+        "idade" : 26,
+        "pet" : "true",
+        "music": [
+            {"name":"Chamego", "estilo": "MBP"}
+        ]
     },
     {
-        "id": "2",
+        "integrante": 2,
+        "estado": "RJ",
+        "idade" : 40,
+        "pet" : "false",
+        "music": [
+            {"name":"Coisa Linda", "estilo": "MBP"}
+        ]
+    },
+    {
+        "integrante": 4,
+        "estado": "MG",
+        "idade" : 52,
+        "pet" : "true",
         "music": [
             {"name":"Aquarela", "estilo": "MBP"}
-        ], 
-        "estado": "RJ",
-        "filme": [
-            {"name":"Fragmentado", "estilo": "Suspense"}
-        ], 
+        ]
     }
 ]
 @app.route('/')
-def infos():
+def home():
     return jsonify(infos)
 
 if __name__ == '__main__':
