@@ -1,0 +1,11 @@
+[
+    {
+        "integrante": 1,
+        "estado": "SP",
+        "idade" : 26,
+        "pet" : "true",
+        "music": [
+            {"name":"Coisa Linda", "estilo": "MBP"}
+        ]
+    }
+]
